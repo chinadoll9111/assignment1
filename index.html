@@ -54,7 +54,7 @@
   <!-- Hero Section -->
   <section class="container-fluid bg-white py-5">
   <div class="container d-flex flex-column align-items-start justify-content-center" style="min-height: 90vh;">
-    <h1 class="fw-bold display-4 mb-3">I’m Alexandra.<br>Glad to see you!</h1>
+    <h1 class="fw-bold display-4 mb-3">I’m Gift.<br>Glad to see you!</h1>
     <p class="text-muted fs-5 mb-4" style="max-width: 600px;">
       I’m a software developer! I can help you build a product, feature or website. Look through
       some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
@@ -214,21 +214,34 @@
 
       <!-- Right side: Skills -->
       <div class="col-md-6">
-        <h5 class="fw-bold">Languages</h5>
-        <div class="d-flex flex-wrap gap-3 mb-4">
+  <div class="accordion" id="languagesAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingLanguages">
+        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLanguages" aria-expanded="false" aria-controls="collapseLanguages">
+          Languages
+        </button>
+      </h2>
+      <div id="collapseLanguages" class="accordion-collapse collapse" aria-labelledby="headingLanguages" data-bs-parent="#languagesAccordion">
+        <div class="accordion-body d-flex flex-wrap gap-3 mb-4">
           <div class="bg-white shadow-sm rounded px-4 py-2 text-center">
             <img src="images/smallimage1.png" alt="JS" width="30"><br>
             JavaScript
           </div>
+
           <div class="bg-white shadow-sm rounded px-4 py-2 text-center">
             <img src="images/smallimage2.png" alt="HTML" width="30"><br>
             HTML
           </div>
+
           <div class="bg-white shadow-sm rounded px-4 py-2 text-center">
             <img src="images/smallimage3.jpg" alt="CSS" width="30"><br>
             CSS
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
 
         <div class="border-top pt-3">
           <p class="d-flex justify-content-between">
@@ -363,6 +376,8 @@
   background-color: white;
   border-radius: 50%;
 }
+
+
 
 
 </style>
